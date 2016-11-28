@@ -42,3 +42,7 @@ Node.js and npm are essential to Angular development.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Reference
+
+This project was originally based on the tutorial [Learn to build a Real-Time Slack clone with AngularFire](https://thinkster.io/angularfire-slack-tutorial#getting-started), but was modified for Firebase 3 and AngularFire 2
