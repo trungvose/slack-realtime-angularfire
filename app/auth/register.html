@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="text-center page-header">
+    <a href="http://trungk18.github.io/" target="_blank"><img alt="trungk18" class="trungk18" src="images/trungk18.png"></a>
+    <h1><a ui-sref="home"><img class="logo-img" src="images/logo.png" /></a> Register</h1>
+  </div>
+
+  <form class="form-signin" ng-submit="authCtrl.register()">
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus ng-model="authCtrl.user.email">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="authCtrl.user.password">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <div class="loading-icon text-center" ng-show="authCtrl.registerLoading">
+      <img class="icon" src="../images/loader.gif" alt="Loading..." />
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+  <div ng-show="authCtrl.error">
+    {{authCtrl.error}}
+  </div>
+</div> <!-- /container -->

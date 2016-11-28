@@ -1,0 +1,51 @@
+{
+  "rules":{
+    ".read": true,
+    "users":{
+      "$uid":{
+        ".write": "auth !== null && $uid === auth.uid",
+        "displayName":{
+          ".validate": "newData.exists() && newData.val().length > 0"
+        },
+        "online":{
+          "$connectionId":{
+            ".validate": "newData.isBoolean()"
+          }
+        }
+      }
+    },
+    "channels":{
+      "$channelId":{
+        ".write": "auth !== null",
+        "name":{
+          ".validate": "newData.exists() && newData.isString() && newData.val().length > 0"
+        }
+      }
+    },
+    "channelMessages":{
+      "$channelId":{
+        "$messageId":{
+          ".write": "auth !== null && newData.child('uid').val() === auth.uid",
+          ".validate": "newData.child('timestamp').exists()",
+          "body":{
+            ".validate": "newData.exists() && newData.val().length > 0"
+          }
+        }
+      }
+    },
+    "userMessages":{
+      "$uid1":{
+        "$uid2":{
+          "$messageId":{
+            ".read": "auth !== null && ($uid1 === auth.uid || $uid2 === auth.uid)",
+            ".write": "auth !== null && newData.child('uid').val() === auth.uid",
+            ".validate": "$uid1 < $uid2 && newData.child('timestamp').exists()",
+            "body":{
+              ".validate": "newData.exists() && newData.val().length > 0"
+            }
+          }
+        }
+      }
+    }
+  }
+}
