@@ -196,7 +196,7 @@ body {
   vertical-align: top;
   height: 100%;
   width: 80%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 55px 15px 65px 15px;
 }
 

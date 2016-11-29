@@ -5,7 +5,9 @@ This is the clone of Slack chat app with realtime support. Using Firebase and An
 ## Demo
 
 [https://fireslack-realtime.firebaseapp.com/](https://fireslack-realtime.firebaseapp.com/)
- 
+
+[![Clone Slack app with realtime support by Firebase](https://img.youtube.com/vi/KWfekG00GIo/0.jpg)](https://www.youtube.com/watch?v=KWfekG00GIo)
+
 ### How to test
 
 1. Login to the FireSlack using at least 2 account in 2 different browsers. Or in the same browser but one is in normal, one is in incognito/private mode. 
