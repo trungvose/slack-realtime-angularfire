@@ -1,16 +1,20 @@
 # slack-realtime-angularfire
 
-This is the clone of Slack chat app with realtime support. Using Firebase and AngularJS.
+This is the clone of Slack chat app with real-time support. Using Firebase and AngularJS.
 
 ## Demo
 
 [https://fireslack-realtime.firebaseapp.com/](https://fireslack-realtime.firebaseapp.com/)
 
+## Video
+
 [![Clone Slack app with realtime support by Firebase](https://img.youtube.com/vi/KWfekG00GIo/0.jpg)](https://www.youtube.com/watch?v=KWfekG00GIo)
+
+> Click on image to open video in new tab 
 
 ### How to test
 
-1. Login to the FireSlack using at least 2 account in 2 different browsers. Or in the same browser but one is in normal, one is in incognito/private mode. 
+1. Login to the FireSlack using at least two accounts in two different browsers. Or in the same browser but one is in normal, one is in incognito/private mode. 
 2. Click into one user or one channel and start typing.
 3. You can see the message appear in another browser as well.
 
