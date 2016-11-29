@@ -61,7 +61,7 @@ body {
 }
 
   .loading-icon .icon {
-    max-width: 35px;
+    max-width: 60px;
   }
 
 .main {
@@ -207,16 +207,7 @@ body {
     width: 100%;
     z-index: 2;
   }
-
-    .message-pane .header h1 {
-      padding: 12px 0 10px 0;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-size: 24px;
-      color: #555459;
-      font-weight: 900;
-    }
-
+  
   .message-pane .message-form {
     position: fixed;
     bottom: 0;
